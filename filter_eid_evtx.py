@@ -11,7 +11,7 @@ def to_lxml(record_xml):
     """
     @type record: Record
     """
-    return etree.fromstring("<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>%s" %record_xml)
+    return etree.fromstring("%s" %record_xml)
 
 
 def xml_records(filename):
